@@ -1,2 +1,25 @@
+.DS_Store
 .DS_store
-.idea
+.idea/
+
+# Private paper sources and drafts.
+Human2Humanoid/
+Human2Humanoid.zip
+*.zip
+*draft*
+*Draft*
+Bionic_Style_Transfer_for_Humanoid_Robots.pdf
+
+# Keep the final public paper PDF available for the website:
+!Human2Humanoid.pdf
+
+# LaTeX build artifacts.
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc

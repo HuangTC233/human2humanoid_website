@@ -1,239 +1,276 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="description"
-        content="A short starter to build website for your paper.">
-  <meta name="keywords" content="Paper, website">
+  <meta name="description" content="Human2Humanoid: Physics-Aware Cross-Morphology Motion Retargeting for Humanoid Robots.">
+  <meta name="keywords" content="Human2Humanoid, humanoid robots, motion retargeting, CycleGAN, Unitree G1, physics-aware learning">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TODO Window title</title> <!-- the browser tab will display this text -->
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-
-    gtag('js', new Date());
-
-    gtag('config', 'G-PYVRSFMDRL');
-  </script>
-
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
+  <title>Human2Humanoid</title>
 
   <link rel="stylesheet" href="./static/css/bulma.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/robot-svgrepo-com.svg">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
-  <script src="./static/js/bulma-carousel.min.js"></script>
-  <script src="./static/js/bulma-slider.min.js"></script>
-  <script src="./static/js/index.js"></script>
+  <script defer src="./static/js/index.js"></script>
 </head>
 <body>
+  <header class="site-header">
+    <nav class="container is-max-widescreen nav-bar" aria-label="Main navigation">
+      <a class="brand" href="#top">Human2Humanoid</a>
+      <div class="nav-links">
+        <a href="#video">Video</a>
+        <a href="#abstract">Abstract</a>
+        <a href="#method">Method</a>
+        <a href="#results">Results</a>
+        <a href="#bibtex">BibTeX</a>
+      </div>
+    </nav>
+  </header>
 
+  <main id="top">
+    <section class="hero-section">
+      <div class="container is-max-widescreen">
+        <div class="paper-kicker">Project Page</div>
 
+        <h1 class="publication-title">
+          Human2Humanoid: Physics-Aware Cross-Morphology Motion Retargeting for Humanoid Robots
+        </h1>
 
+        <p class="publication-subtitle">
+          Unsupervised human-to-humanoid motion transfer with skeleton-aware learning,
+          morphology-invariant end-effector consistency, and deployability-oriented physical constraints.
+        </p>
 
-<section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">TODO: Title of your paper</h1>
-          <div class="is-size-5 publication-authors">
+        <div class="publication-authors" aria-label="Authors">
+          <span>Tianchen Huang</span>
+          <span>Feiyang Yuan</span>
+          <span>Junchi Gu</span>
+          <span>Shurui Fang</span>
+          <span>Xiaohu Zhang</span>
+          <span>Yu Wang</span>
+          <span>Wei Gao</span>
+          <span>Shiwu Zhang</span>
+        </div>
 
-            <!-- TODO: modify authors, affiliations and personal websites-->
+        <p class="affiliation">
+          Institute of Humanoid Robots, Department of Precision Machinery and Precision Instrumentation,
+          University of Science and Technology of China
+        </p>
 
-            <span class="author-block">
-              <a href="https://www.dfki.de/web/ueber-uns/mitarbeiter/person/TODO">TODO Author1 Name</a><sup>1</sup>,</span>
+        <div class="publication-links" aria-label="Publication links">
+          <a href="Human2Humanoid.pdf" class="button is-dark is-rounded" target="_blank" rel="noopener">
+            <span class="icon"><i class="fas fa-file-pdf"></i></span>
+            <span>Paper</span>
+          </a>
+          <a href="#video" class="button is-dark is-rounded">
+            <span class="icon"><i class="fas fa-play"></i></span>
+            <span>Video</span>
+          </a>
+        </div>
 
-            <span class="author-block">
-              <a href="https://www.dfki.de/web/ueber-uns/mitarbeiter/person/TODO">TODO Author2 Name</a><sup>2</sup>,</span>
-
-            <!-- change of line -->
-            <br>
-
-            <span class="author-block">
-              <a href="https://www.dfki.de/web/ueber-uns/mitarbeiter/person/TODO">TODO Author3 Name</a><sup>1,2</sup>,</span>
-
-            <span class="author-block">
-              <a href="https://www.dfki.de/web/ueber-uns/mitarbeiter/person/TODO">TODO Author4 Name</a><sup>2,1</sup>,</span>
-
-          </div>
-
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>German Research Center for Artificial Intelligence (DFKI), Osnabrück, Germany.</span>
-            <span class="author-block"><sup>2</sup>Osnabrück University, Institute of Computer Science, Germany.</span>
-          </div>
-
-          <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- PDF Link. -->
-              <span class="link-block">
-                <a href="https://arxiv.org/pdf/TODO_ARXIV_ID"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span>
-              <span class="link-block">
-                <a href="https://arxiv.org/abs/TODO_ARXIV_ID"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-              <!-- Video Link. -->
-              <span class="link-block">
-                <!-- TODO: replace with your own video YouTube link -->
-                <a href=" https://youtu.be/4-GgOg2nuGE"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
-              </span>
-              <!-- Code Link. -->
-              <span class="link-block">
-                <!-- TODO: replace with your own github paper code link -->
-                <a href="https://github.com/DFKI-NI/mobipick_labs"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code</span>
-                  </a>
-              </span>
-              <!-- Dataset Link. -->
-              <!-- <span class="link-block">
-                TODO: if your paper has a dataset you can uncomment this block
-                <a href="https://github.com/todo"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="far fa-images"></i>
-                  </span>
-                  <span>Data</span>
-                  </a> -->
-            </div>
-
+        <div class="paper-video" id="video">
+          <div class="video-shell">
+            <video controls playsinline preload="metadata">
+              <source src="./human2humanoud.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- <section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/teaser.mp4"
-                type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
-      </h2>
-    </div>
-  </div>
-</section> -->
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
+    <section class="section paper-section" id="abstract">
+      <div class="container is-max-desktop">
+        <h2 class="section-title">Abstract</h2>
+        <div class="content abstract-text">
           <p>
-            TODO_ABSTRACT Robotic task execution faces challenges due to the inconsistency between symbolic planner models and the rich control structures actually running on the robot. In this paper, we present the first physical deployment of an integrated actor-planner system that shares hierarchical operational models for both acting and planning, interleaving the Reactive Acting Engine (RAE) with an anytime UCT-like Monte Carlo planner (UPOM). We implement RAE+UPOM on a mobile manipulator in a real-world deployment for an object collection task. Our experiments demonstrate robust task execution under action failures and sensor noise, and provide empirical insights into the interleaved acting-and-planning decision making process.
+            Retargeting human motion to humanoid robots is critical for teleoperation, imitation learning and
+            human-robot interaction. However, it remains challenging because of substantial morphological discrepancies
+            between humans and robots, including differences in skeletal topology, limb proportions and degrees of freedom,
+            as well as the scarcity of paired motion data. This paper presents Human2Humanoid, an unsupervised motion
+            retargeting framework that transfers human motions to humanoid robot behaviors with high fidelity.
+          </p>
+          <p>
+            To bridge the domain gap under unpaired data, we adopt a CycleGAN-based architecture equipped with a
+            skeleton-aware graph convolutional network to capture topology-dependent motion features. To address
+            cross-domain scale mismatches, we introduce a morphology-invariant end-effector consistency loss that aligns
+            normalized end-effector trajectories to preserve motion semantics across embodiments. To improve physical
+            plausibility and reduce contact artifacts, we impose explicit physics-aware feasibility constraints to
+            encourage reproduction of the contact patterns in the source motion. Experimental results show that the
+            proposed method successfully retargets human motion to the Unitree G1 humanoid robot without paired data,
+            and outperforms existing methods in both downstream controllability and physical feasibility.
           </p>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <!-- TODO: After uploading your video to YouTube click on "share" then "Embed" then copy-paste <iframe ... </iframe> then replace sample video below -->
-          <iframe width="560" height="315"
-                  src="https://www.youtube.com/embed/4-GgOg2nuGE?si=4RbH_5X4Xn8zXEyu" title="YouTube video player"
-                  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <section class="section paper-section section-tint" id="method">
+      <div class="container is-max-widescreen">
+        <div class="section-heading">
+          <h2 class="section-title">Method</h2>
+          <p>
+            Human2Humanoid learns bidirectional mappings between unpaired human and robot motion domains while keeping
+            the generated robot motion semantically faithful and physically trackable.
+          </p>
+        </div>
+
+        <figure class="paper-visual">
+          <img src="./static/images/paper/main_00.png" alt="Overview of the Human2Humanoid framework">
+          <figcaption>
+            Human2Humanoid combines skeleton-aware motion translation with morphology-invariant and physics-aware objectives.
+          </figcaption>
+        </figure>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="feature-label">01</span>
+            <h3>Skeleton-aware generators</h3>
+            <p>
+              Graph convolutional layers operate on each embodiment's native kinematic topology instead of flattening
+              poses into joint vectors.
+            </p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-label">02</span>
+            <h3>Unpaired domain transfer</h3>
+            <p>
+              A CycleGAN-style objective learns human-to-robot and robot-to-human mappings without frame-wise motion
+              correspondence.
+            </p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-label">03</span>
+            <h3>Morphology-invariant semantics</h3>
+            <p>
+              End-effector trajectories are normalized by embodiment-specific scale, preserving hands and feet motion
+              semantics across different body proportions.
+            </p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-label">04</span>
+            <h3>Physics-aware feasibility</h3>
+            <p>
+              Contact, foot-height and joint-limit constraints reduce foot skating, floating, penetration, and unsafe
+              robot configurations.
+            </p>
+          </article>
         </div>
       </div>
-    </div>
-    <!--/ Paper video. -->
-  </div>
-</section>
+    </section>
 
-            </video>
-          </div>
-      </div>
-    </div>
+    <section class="section paper-section" id="results">
+      <div class="container is-max-widescreen">
+        <div class="section-heading">
+          <h2 class="section-title">Results</h2>
+          <p>
+            Evaluation is conducted on human motions from Motion-X and Unitree G1 motions from PHUMA, using a fixed
+            downstream tracking policy for fair comparison.
+          </p>
+        </div>
 
+        <div class="metric-grid" aria-label="Average quantitative results">
+          <article class="metric-card">
+            <span class="metric-value">88.5%</span>
+            <span class="metric-label">Avg. Success Rate</span>
+          </article>
+          <article class="metric-card">
+            <span class="metric-value">0.12</span>
+            <span class="metric-label">Avg. Tracking Error</span>
+          </article>
+          <article class="metric-card">
+            <span class="metric-value">4.7%</span>
+            <span class="metric-label">Avg. Foot Skating</span>
+          </article>
+          <article class="metric-card">
+            <span class="metric-value">0.05 cm</span>
+            <span class="metric-label">Avg. Ground Penetration</span>
+          </article>
+        </div>
 
+        <div class="comparison-table-wrap" aria-label="Average quantitative comparison table">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Method</th>
+                <th>SR (%) ↑</th>
+                <th>TE ↓</th>
+                <th>FS (%) ↓</th>
+                <th>GP (cm) ↓</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>GMR</th>
+                <td>86.9</td>
+                <td>0.14</td>
+                <td>6.8</td>
+                <td>0.12</td>
+              </tr>
+              <tr>
+                <th>PHC</th>
+                <td>32.7</td>
+                <td>0.22</td>
+                <td><span class="second-best">1.4</span></td>
+                <td>0.11</td>
+              </tr>
+              <tr>
+                <th>Unitree Retarget</th>
+                <td>71.2</td>
+                <td>0.19</td>
+                <td>11.1</td>
+                <td>0.35</td>
+              </tr>
+              <tr class="ours-row">
+                <th>Human2Humanoid</th>
+                <td><span class="best-value">88.5</span></td>
+                <td><span class="best-value">0.12</span></td>
+                <td>4.7</td>
+                <td><span class="best-value">0.05</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
+        <figure class="paper-visual results-visual">
+          <img src="./static/images/paper/compare_00.png" alt="Qualitative comparison between Human2Humanoid and optimization-based baselines">
+          <figcaption>
+            Qualitative comparison with optimization-based retargeting baselines.
+          </figcaption>
+        </figure>
 
-
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@article{TODO
-  author       = {TODO_AUTHOR(S)},
-  title        = {TODO_TITLE},
-  conference   = {TODO_CONFERENCE},
-  year         = {TODO_YEAR},
-}
-  </code></pre>
-  </div>
-</section>
-
-
-<footer class="footer">
-  <div class="container">
-    <div class="content has-text-centered">
-      <!-- <a class="icon-link"
-         href="./static/files/TODO.pdf">
-        <i class="fas fa-file-pdf"></i>
-      </a> -->
-      <a class="icon-link" href="https://github.com/dfki-ni" class="external-link" disabled>
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-          <center><p>
-            This website (<a href="https://github.com/DFKI-NI/TODO_ID_CONFERENCE_YEAR/">source code</a>) was adapted from the popular <a
-            href="https://nerfies.github.io">Nerfies</a> project page and is licensed under a <br><a rel="license"
-            href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p></center>
+        <div class="failure-grid">
+          <figure class="failure-card">
+            <img src="./static/images/paper/fail_phc.png" alt="PHC baseline failure case with joint-limit discontinuity">
+            <figcaption>PHC: joint-limit induced discontinuity.</figcaption>
+          </figure>
+          <figure class="failure-card">
+            <img src="./static/images/paper/fail_gmr.png" alt="GMR baseline failure case with jitter">
+            <figcaption>GMR: jitter without per-motion tuning.</figcaption>
+          </figure>
         </div>
       </div>
-    </div>
-  </div>
-</footer>
+    </section>
 
+    <section class="section paper-section section-tint" id="bibtex">
+      <div class="container is-max-desktop">
+        <h2 class="section-title">BibTeX</h2>
+        <pre class="bibtex"><code>@misc{huang2026human2humanoid,
+  title  = {Human2Humanoid: Physics-Aware Cross-Morphology Motion Retargeting for Humanoid Robots},
+  author = {Tianchen Huang and Feiyang Yuan and Junchi Gu and Shurui Fang and Xiaohu Zhang and Yu Wang and Wei Gao and Shiwu Zhang},
+  year   = {2026},
+  note   = {Manuscript}
+}</code></pre>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container is-max-desktop has-text-centered">
+      <p>
+        Human2Humanoid project page.
+      </p>
+    </div>
+  </footer>
 </body>
 </html>
