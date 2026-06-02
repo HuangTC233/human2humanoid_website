@@ -124,6 +124,17 @@ a:hover {
   font-weight: 700;
 }
 
+.publication-authors a {
+  border-bottom: 1px solid rgba(35, 124, 139, 0.45);
+  color: var(--teal);
+  padding-bottom: 0.08rem;
+}
+
+.publication-authors a:hover {
+  border-bottom-color: var(--green);
+  color: var(--green);
+}
+
 .affiliation {
   color: var(--muted);
   font-size: 0.98rem;
