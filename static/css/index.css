@@ -369,7 +369,9 @@ figcaption {
 .video-shell {
   background: #0f171d;
   border-radius: 8px;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
+  position: relative;
 }
 
 .paper-video {
@@ -383,10 +385,11 @@ figcaption {
 }
 
 .video-shell iframe {
-  aspect-ratio: 16 / 9;
   border: 0;
   display: block;
-  height: auto;
+  height: 100%;
+  inset: 0;
+  position: absolute;
   width: 100%;
 }
 
