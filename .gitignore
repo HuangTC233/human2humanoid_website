@@ -13,6 +13,9 @@ Bionic_Style_Transfer_for_Humanoid_Robots.pdf
 # Keep the final public paper PDF available for the website:
 !Human2Humanoid.pdf
 
+# Keep local demo video out of the public repository; the page embeds a streaming version.
+human2humanoud.mp4
+
 # LaTeX build artifacts.
 *.aux
 *.bbl

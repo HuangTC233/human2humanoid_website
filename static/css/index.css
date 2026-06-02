@@ -382,8 +382,9 @@ figcaption {
   box-shadow: 0 24px 60px rgba(23, 32, 42, 0.16);
 }
 
-.video-shell video {
+.video-shell iframe {
   aspect-ratio: 16 / 9;
+  border: 0;
   display: block;
   height: auto;
   width: 100%;
