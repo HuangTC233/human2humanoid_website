@@ -220,8 +220,7 @@ figcaption {
 }
 
 .feature-grid,
-.metric-grid,
-.failure-grid {
+.metric-grid {
   display: grid;
   gap: 1rem;
 }
@@ -250,8 +249,7 @@ figcaption {
 }
 
 .feature-card,
-.metric-card,
-.failure-card {
+.metric-card {
   background: #ffffff;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -368,32 +366,6 @@ figcaption {
   font-weight: 850;
 }
 
-.failure-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  margin-top: 2rem;
-}
-
-.failure-card {
-  margin: 0;
-  overflow: hidden;
-}
-
-.failure-card img {
-  aspect-ratio: 16 / 10;
-  display: block;
-  object-fit: contain;
-  padding: 0.75rem;
-  width: 100%;
-}
-
-.failure-card figcaption {
-  border-top: 1px solid var(--line);
-  color: var(--red);
-  font-weight: 750;
-  margin: 0;
-  padding: 0.8rem 1rem 0.95rem;
-}
-
 .video-shell {
   background: #0f171d;
   border-radius: 8px;
@@ -464,8 +436,7 @@ figcaption {
   }
 
   .feature-grid,
-  .metric-grid,
-  .failure-grid {
+  .metric-grid {
     grid-template-columns: 1fr;
   }
 
