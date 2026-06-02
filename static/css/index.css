@@ -227,7 +227,7 @@ figcaption {
 
 .paper-visual {
   margin: 0 auto 2rem;
-  max-width: 1120px;
+  max-width: 960px;
 }
 
 .paper-visual img {
@@ -242,6 +242,7 @@ figcaption {
 
 .results-visual {
   margin-bottom: 2.2rem;
+  max-width: 780px;
 }
 
 .feature-grid {
